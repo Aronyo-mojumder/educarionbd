@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='confirmation.css') }}">
+    <title>BTEB Results Hub - PDF Submission Confirmation</title>
+</head>
+<body>
+    <header>
+        <h1>BTEB Results Hub</h1>
+    </header>
+    <div class="container">
+        <h2>PDF Submission Successful</h2>
+        <p>Thank you for submitting the PDF file. The data has been stored in the database.</p>
+
+    </div>
+    <div class="result">
+        <a href="/get_result">Get Individual Results</a>
+    </div>
+    <div class="back">
+        <button class="bu"><a href="/">Back to Home Page</a></button>
+    </div>
+    <footer>
+        <p>&copy; <span>Aronyo Mojumder</span>. All rights reserved. Site name: Education BD</p>
+    </footer>
+</body>
+</html>

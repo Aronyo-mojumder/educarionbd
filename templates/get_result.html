@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/get_result.css">
+    <title>Education bd</title>
+</head>
+<body>
+    <header>
+
+        <a href="#" class="logo">Education<span> bd</span></a>
+        <ul class="navbar">
+            <li><a href="/home" class="active">Home</a></li>
+
+
+
+        </ul>
+         <div class="main">
+            {% if session.Iname %}
+                <a href="#" class="user">{{ session.Iname }}</a>
+            {% else %}
+                <a href="#" class="user">{{ session.useremail }}</a>
+            {% endif %}
+            <a href="/logout"><button class="log">Logout</button></a>
+        </div>
+    </header>
+    <div class="ti">
+        <h2>Individual Results</h2>
+    </div>
+
+    <div class="container">
+
+        <div class="input">
+            <form action="/result" method="post">
+                <label for="rollNumber">Enter Roll Number:</label>
+                <input type="text" name="roll" id="rollNumber" placeholder="Roll Number">
+                <div>
+                    <button type="submit">Show Result</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="back">
+        <button class="bu"><a href="/home">Back to Home Page</a></button>
+    </div>
+    <footer>
+        <p>&copy; <span>Aronyo Mojumder</span>. All rights reserved. Site name: Education BD</p>
+    </footer>
+</body>
+</html>

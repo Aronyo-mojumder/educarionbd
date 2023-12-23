@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education BD</title>
+    <script src="https://kit.fontawesome.com/a23861cd30.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/static/ins_login.css">
+</head>
+<body>
+    <header>
+        <a href="#"class="logo">Education<span> bd</span></a>
+
+        <div class="main">
+            <a href="/" class="user">Login</a>
+            <a href="/signup"><button class="reg">Register</button></a>
+        </div>
+    </header>
+
+    <section>
+        <div class="Login">
+            <div class="wrapper">
+                <form action="/Inlogin" method="post">
+                    <h2>Institute Login</h2>
+                    <div class="input-field">
+                        <input type="text" name="Iname" required>
+                        <label>Enter Institute Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" name="password" required>
+                        <label>Enter Institute  password</label>
+                    </div>
+                    <div class="forget">
+                        <label for="remember">
+                            <input type="checkbox" id="remember">
+                            <p>Remember me</p>
+                        </label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit">Log In</button>
+                    <div class="register">
+                        <p>Don't have an account? <a href="/signup">Register</a></p>
+                    </div>
+
+                </form>
+                <a class="Inlog" href="/" ><button>Student Login</button></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; <span>Aronyo Mojumder</span>. All rights reserved. Site name: Education BD</p>
+    </footer>
+</body>
+</html>

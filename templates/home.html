@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education BD</title>
+    <script src="https://kit.fontawesome.com/a23861cd30.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/static/home.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Education<span> bd</span></a>
+        <ul class="navbar">
+             <li><a href="/home" class="active">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">INSTITUTE</a></li>
+            <li><a href="/get_result">RESULT</a></li>
+        </ul>
+        <div class="main">
+            {% if session.Iname %}
+                <a href="#" class="user">{{ session.Iname }}</a>
+            {% else %}
+                <a href="#" class="user">{{ session.useremail }}</a>
+            {% endif %}
+            <a href="/logout"><button class="log">Logout</button></a>
+        </div>
+    </header>
+    <div class="wel">
+    <h1>Welcome to <span>Education bd </span></h1>
+    </div>
+    <div>
+        {% if session.Iname %}
+            <div class="reg">
+                <a href="/get_result"><button class="get">Get Individual Results</button></a>
+            </div>
+            <br>
+             <div class="reg">
+                 <a href="/uplode"><button class="up">Upload PDF Result</button></a>
+             </div>
+
+        {% else %}
+            <div class="reg">
+                <a href="/get_result"><button class="get">Get Individual Results</button></a>
+            </div>
+        {% endif %}
+    </div>
+    <footer>
+        <p>&copy; <span>Aronyo Mojumder</span>. All rights reserved. Site name: Education BD</p>
+    </footer>
+</body>
+</html>

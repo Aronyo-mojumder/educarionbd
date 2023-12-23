@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1d0338;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: chartreuse;
+}
+
+
+.container {
+    border: 3px solid #eb1212;
+    padding: 10px;
+    margin: 20px auto;
+    width: 50%;
+    background-color: #f9f9f9;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.container h2 {
+    color: rgb(47, 0, 255);
+    font-weight: bold;
+}
+.result {
+
+    padding-top: 60px;
+    justify-content: center;
+    display: flex;
+}
+.result a{
+    text-decoration: none;
+    background-color: chartreuse;
+    font-size: larger;
+    height: 24px;
+    width: auto;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.back {
+    padding-top: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.back a {
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    background: rgb(130, 122, 122);
+    height: 15px;
+    width: 180px;
+    justify-content: center;
+    border-radius: 15px;
+    padding-top: 6px ;
+    color: rgb(8, 245, 47);
+    font-weight: bold;
+}
+
+.bu{
+    border-radius: 15px;
+    border-color: #00ff62;
+    border-width: 2px;
+
+}
+.back button :hover {
+    background-color: #ff0004;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer span{
+  color: #0af012;
+}

@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style:none ;
+}
+:root{
+    --bg-color:#222327;
+    --text-color:#fff;
+    --main-color:#27fd53;
+}
+body{
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+    background-image: url(/static/home.png);
+
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all;
+}
+.logo{
+    color: var(--text-color);
+    margin-right: 3px;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.logo span{
+    color: var(--main-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.navbar{
+    display: flex;
+}
+.navbar a {
+    color:var(--text-color) ;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+.main{
+    display: flex;
+    align-items: center;
+}
+.main a {
+    margin-right: 25px;
+    margin-left: 10px;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+
+}
+.log{
+    background: #59fd01;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    padding: 7px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 2px solid transparent;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user i {
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 7px;
+}
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+@media (max-width:1280px){
+    header{
+        padding: 14px 2%;
+        transition: .2s;
+
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+
+    }
+}
+@media(max-width:1090px){
+    .navbar{
+        position: absolute;
+        top:100%;
+        right:2%;
+        width: 270px;
+        height: 29vh;
+        background: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+
+    }
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+    }
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+.about{
+    width: 100%;
+    height: 100px;
+
+    padding-top: 10%;
+}
+.about h3 {
+
+    padding-left: 15%;
+    padding-right: 15%;
+    color: var(--main-color);
+}
+.signu-bar{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 100%;
+    padding-top: 15%;
+}
+
+.signup-container {
+    background-color: #082308;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 8px 8px 8px rgba(19, 2, 2, 0.1);
+    width: 400px;
+    margin-right: 2%;
+
+}
+
+.signup-container h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.signup-form label {
+    font-weight: bold;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid #f95e04;
+    border-radius: 3px;
+}
+
+.signup-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #04AA6D;
+    color: rgb(10, 10, 10);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #038754;
+}
+
+.container.signin {
+    text-align: center;
+    margin-top: 10px;
+}
+.img{
+
+    height: 100%;
+    width: 100%;
+}
+.wel{
+    padding-top: 15%;
+    padding-left: 18%;
+    padding-right: 40%;
+
+}
+.wel h1{
+    font-weight: 900;
+    font-size: 2.2rem;
+}
+.wel h1  span{
+    color: var(--main-color);
+    font-weight: 900;
+    font-size: 2.2rem;
+}
+.reg{
+    height: 30px;
+    width: auto;
+
+    padding-left: 19%;
+    padding-top: 5%;
+    border-radius: 20px;
+}
+
+
+button {
+    background: #4b57f4;
+    color: #faf7f7;
+    font-weight: 600;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+  }
+
+  button:hover {
+    color: #fff;
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer span{
+  color: #0af012;
+}

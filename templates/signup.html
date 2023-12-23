@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education BD</title>
+    <script src="https://kit.fontawesome.com/a23861cd30.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/static/signup.css">
+    <script>
+        function validateForm() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("cpassword").value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match. Please re-enter your passwords.");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="#"class="logo">Education<span> bd</span></a>
+
+        <div class="main">
+            <a href="/signup" class="user">Register</a>
+            <a href="/"><button class="reg">login</button></a>
+        </div>
+    </header>
+
+    <section>
+        <div class="Login">
+            <div class="wrapper">
+                <form action="/signup" method="post" onsubmit="return validateForm()">
+                    <h2>Register</h2>
+                    <div class="input-field">
+                        <input type="text" name="user" required>
+                        <label>Enter your name</label>
+                    </div>
+                    <div class="input-field {% if error %}error{% endif %}">
+                            <input type="text" name="email" required>
+                            <label>Enter your email</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" id="password" name="password" required>
+                        <label>Enter your password</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="cpassword" name="cpassword" required>
+                        <label>Confirm your password </label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                    {% if error %}
+                    <div class="error-message">
+                        {{ error }}
+                    </div>
+                    {% endif %}
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; <span>Aronyo Mojumder</span>. All rights reserved. Site name: Education BD</p>
+    </footer>
+</body>
+</html>
